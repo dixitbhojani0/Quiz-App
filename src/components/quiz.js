@@ -121,7 +121,7 @@ class Quiz extends React.Component {
 		}
 		let response = await fetch(this.apiUri);
 		let apiResponseData = await response.json();
-		console.log(apiResponseData);
+
 		this.setState({
 			questionCount: this.state.questionCount + 1,
 			apiData: apiResponseData,
