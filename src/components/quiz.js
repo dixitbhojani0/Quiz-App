@@ -221,7 +221,7 @@ class Quiz extends React.Component {
 							<label id="selectCategoryLabel">Filter BY:</label>
 						</div>*/}
 						<div className="categoryDropdown col-xs-12 col-sm-12 col-md-2 col-xl-2">
-							<select name="category" className='form-select' id="selectCategory" onChange={this.handleOnCategoryChange} size="4">
+							<select name="category" className='form-select' id="selectCategory" onChange={this.handleOnCategoryChange} size="3">
 								<option id="category-0" value='0' onClick={(e)=>{e.target.setAttribute("disabled","disabled")}} disabled>Select Category</option>
 								{this.state.apiCategoryData && this.state.apiCategoryData.map((category, index) => (
 									<option key={index} id={"category-" + category.id} value={category.id}>{category.name}</option>
